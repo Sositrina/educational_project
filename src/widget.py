@@ -18,6 +18,9 @@ def mask_account_card(props: str) -> str:
 
 
 def get_date(str_date: str) -> str:
+    """Принимает строку с датой в формате '2024-03-11T02:26:18.671407'
+    Возвращает строку с датой в формате 'ДД.ММ.ГГГГ'
+    """
     return f"{str_date[8:10]}.{str_date[5:7]}.{str_date[0:4]}"
 
 
