@@ -1,4 +1,7 @@
-def filter_by_state(dictionaries: list[dict], state: str = "EXECUTED") -> list[dict]:
+from typing import Dict, List
+
+
+def filter_by_state(dictionaries: List[Dict], state: str = "EXECUTED") -> List[Dict]:
     """Принимает список словарей и опционально значение для ключа state по умолчанию 'EXECUTED'
     Возвращает новый список словарей у которых ключ state со значением 'EXECUTED'"""
     return [new_list for new_list in dictionaries if new_list["state"] == state]
@@ -12,7 +15,7 @@ dictionaries = [
 ]
 
 
-def sort_by_date(dictionaries: list[dict], reverse: bool = True) -> list[dict]:
+def sort_by_date(dictionaries: List[Dict], reverse: bool = True) -> List[Dict]:
     """Принимает список словарей и сортировку по умлочанию - убывание
     Возвращает  отсортированный список словарей по убиванию по ключу 'date'"""
     return sorted(dictionaries, key=lambda x: x["date"], reverse=reverse)
