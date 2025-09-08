@@ -10,7 +10,22 @@
 ```
 git clone https://github.com/Sositrina/Project3
 ```
-2. Зависимости проекта указаны в файле `pyproject.toml`
+2. Установите виртуальное окружение:
+```
+python -m venv venv
+```
+3. Активируйте виртуальное окружение:
+```
+venv\Scripts\activate
+```
+4. Установите библиотеки:
+```
+pip install -r requirements
+```
+5. Проверьте установку библиотек:
+```
+pip list
+```
 
 ## Функционал
 
