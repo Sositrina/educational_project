@@ -26,6 +26,10 @@ pip install -r requirements
 ```
 pip list
 ```
+6. Установите фреймворки:
+```
+poetry add --group dev pytest
+```
 
 ## Функционал
 
