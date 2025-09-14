@@ -58,7 +58,7 @@ def test_get_mask_account(mask_account: str) -> None:
 
 
 @pytest.mark.parametrize("element", [0, 12345678909042374986327])
-def test_mask_account_wong(element: int) -> None:
+def test_mask_account_wrong(element: int) -> None:
     """
     Тестирует get_mask_account на неверных значениях.
 
